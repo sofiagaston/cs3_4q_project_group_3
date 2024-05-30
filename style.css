@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+}
+
+#indexbg {
+    background-image: url('media/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+header {
+    background: #D9F5FD;
+    color: grey;
+    font-size: 30px;
+    height: 100px;
+    display: flex;
+    border: dashed 2px #406C83;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+}
+
+.topArea {
+    background: #D9F5FD;
+    border: dashed 2px #406C83;
+    width: 90%;
+    z-index: 1;
+    max-height: 120px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    margin-top: 20vh;
+}
+
+.slogan {
+    font-family: 'Signika Negative', sans-serif;
+    color: #5587a2;
+    text-shadow: 2px 3px #406C83;
+    font-size: x-large;
+    text-align: center;
+    flex-grow: 1;
+    display: inline-flex;
+}
+
+.contact {
+    max-width: 30%;
+    text-align: right;
+    margin-left: auto;
+    padding-right: 30px;
+    color: #5587a2;
+    text-shadow: 1px 1px #406C83;
+    font-size: x-large;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.content{
+    background:white;
+    width:80vw;
+    padding-right: 50px;;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;    
+    border: solid 2px #406C83;
+    font-family: "Inconsolata", monospace;
+}
+
+.content a{
+    text-decoration: none;
+    color:#D5E6E6;
+    text-shadow: 2px 1px #406C83;
+    background-color: #406C83;
+    padding: 10px;
+    border-radius: 15px;
+    border: double;
+    font-family: "Kalam";
+}
+
+fieldset {
+    background-color: white;
+    max-width: 40vw;
+    padding: 20px;
+    border: 2px solid #406C83;
+}
+
+#logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+#headerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-right: 35vw;
+}
+
+#signUp {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25vw;
+    margin-top: 20vh;
+}
+
+legend {
+    color: #406C83;
+    text-shadow: 1px 1px rgb(168, 173, 195);
+    font-family: "Kalam";
+    font-weight: 700;
+    font-style: normal;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.password {
+    position: relative;
+}
+
+.password input[type="password"] {
+    width: 80%;
+    margin-right: 5px;
+}
+
+.password input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+.password .eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+.sex,
+textarea {
+    background-color: #D5E6E6; 
+    border: 1px solid #D5E6E6; 
+    padding: 10px; 
+    margin: 5px;
+    width: 90%;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input[type="submit"] {
+    background-color: #80B4C5;
+    color: #D9F5FD;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: solid 2px #406C83;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+    text-shadow: 1px 1px rgb(168, 173, 195);
+    font-family: "Kalam";
+    font-weight: 700;
+    font-style: normal;
+    color: #406C83;
+}
+
+input[type="submit"]:hover {
+    background-color: #3498db;
+}
+
+.name input {
+    flex: 2;
+}
+
+.password input {
+    margin-bottom: 10px;
+}
+
+.page {
+    background-image: url('media/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+#profileContent {
+    display: flex;
+    margin: 50px;
+    background-color: aliceblue;
+    box-shadow: 10px 7px #80B4C5;
+    border-radius: 25px;
+    margin-top: 20vh;
+}
+
+#profile {
+    border-radius: 100px;
+    border: solid 4px #80B4C5;
+    margin: 50px;
+}
+
+#info {
+    margin: 50px;
+}
+
+footer {
+    width: 100%;
+    min-height: 20px;
+    position: fixed;
+    display: inline-flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #D9F5FD;
+    color: grey;
+    font-size: 30px;
+    height: 100px;
+    border: dashed 2px #406C83;
+}
+
+.footer {
+    display: inline-flex;
+    float: right;
+}
+
+.icon {
+    background: url(media/sprite3.png) no-repeat;
+    width: 66px;
+    height: 66px;
+    margin-right: 5px;
+    align-items: right;
+    margin: 15px;
+}
+
+#twitter {
+    background-position: -66px -72px;
+}
+
+#instagram {
+    background-position: -290px -221px;
+}
+
+#pinterest {
+    background-position: -141px -221px;
+}
+
+#facebook {
+    background-position: -439px -146px;
+}

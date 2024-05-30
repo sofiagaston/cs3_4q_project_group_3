@@ -1,0 +1,54 @@
+<!--Sign Up -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body id="indexbg">
+    <header>
+        <div id="logo">
+            <img src="media/LOGO.png" height="95px" alt="Logo">
+        </div>
+        <div id="headerLogo">
+            <img src="media/headerLogo.png" height="95px" alt="Header Logo">
+        </div>
+    </header>
+    <form id="signUp">
+        <fieldset>
+            <legend>SIGN UP FOR PROFISH</legend>
+            <div class="name">
+                <input id="fn" name="fn" type="text" placeholder="First Name" required>
+            </div>
+            <div class="name">
+                <input id="ln" name="ln" type="text" placeholder="Last Name" required>
+            </div>
+            <div class="sex" required>
+                <label for="sex">Sex:</label><br>
+                <input type="radio" id="male" name="sex" value="Male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="sex" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="pnts" name="sex" value="Prefer not to say">
+                <label for="pnts">Prefer not to say</label>
+            </div>
+            <input type="text" id="email" name="email" placeholder="Email Address" required>
+            <div class="password">
+                <input id="pass" name="pass" type="password" placeholder="Password" required>
+                <label class="eye" for="togglePassword">
+                    <i id="togglePassword" class="fas fa-eye-slash"></i>
+                </label>
+            </div>
+            <input id="contactNum" name="contactNum" type="text" placeholder="Contact Number"><br>
+            <textarea id="reason" name="reason" cols="50" rows="4" placeholder="Why do you support this campaign?" required></textarea>
+            <center><input type="submit" value="SIGN UP"></center>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

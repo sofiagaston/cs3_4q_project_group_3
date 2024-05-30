@@ -1,0 +1,67 @@
+<!--Profile Information page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="profile.js"></script>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div id="logo">
+                <img src="media/LOGO.png" height="95px" alt="Logo">
+            </div>
+            <div id="headerLogo">
+                <img src="media/headerLogo.png" height="95px" alt="Header Logo">
+            </div>
+        </header>
+        <div id="profileContent">
+            <img id="profile" src="media/blankProfile.webp" height="200px">
+            <div id="info">
+                <h1>Profile Information</h1>
+                <p id="name"></p>
+                <p id="sex"></p>
+                <p id="email"></p>
+                <p id="contact"></p>
+                <p id="reason"></p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <a href="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwzSqrMGD04kpKLM5OLUlKzMkBAEwJBzU&q=basketball&rlz=1C1KNTJ_enPH1072PH1072&oq=basketba&gs_lcrp=EgZjaHJvbWUqEAgBEC4YgwEY1AIYsQMYgAQyEwgAEAAYgwEY4wIYsQMYgAQYnwQyEAgBEC4YgwEY1AIYsQMYgAQyBggCEEUYOTINCAMQABiDARixAxiABDIKCAQQABixAxiABDIHCAUQABiABDINCAYQABiDARixAxiABDINCAcQABiDARixAxiABDIHCAgQABiABDINCAkQABiDARixAxiABNIBCDQzMTFqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&safe=active&ssui=on#sie=lg;/g/11snv1vp6v;3;/m/05jvx;mt;fp;1;;;">
+            <div class="icon" id="twitter"></div>
+        </a>
+        <a href="https://time.com/3578025/apps-love-relationships-dating/">
+            <div class="icon" id="instagram"></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.weplaydots.twodotsandroid&hl=en&gl=US">
+            <div class="icon" id="pinterest"></div>
+        </a>
+        <a href="https://www.pinterest.ph/">
+            <div class="icon" id="facebook"></div>
+        </a>
+    </footer>
+    <!--We chose to internal java script for convience-->
+    <script>function displayProfileData() {
+        const savedFormData = JSON.parse(localStorage.getItem("formData"));
+    
+        if (savedFormData) {
+            document.getElementById('name').textContent = `Name: ${savedFormData.fn} ${savedFormData.ln}`;
+            document.getElementById('sex').textContent = `Sex: ${savedFormData.sex}`;
+            document.getElementById('email').textContent = `Email Address: ${savedFormData.email}`;
+            document.getElementById('contact').textContent = `Contact Number: ${savedFormData.contactNum}`;
+            document.getElementById('reason').textContent = `Reason: ${savedFormData.reason}`;
+        } else {
+            alert('No profile data found.');
+        }
+    }
+    
+    displayProfileData();
+    </script>
+</body>
+</html>
